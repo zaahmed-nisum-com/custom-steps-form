@@ -1,0 +1,27 @@
+.step-form-main-container {
+  width: 450px;
+  margin: 18px auto;
+}
+
+.next-form-flip {
+    /* transform: rotateY(360deg); */
+    animation: next-form-flip 1s;
+}
+
+@keyframes next-form-flip {
+  0% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* .next-form-flip{
+  transition: transform 3s;
+  transform-style: preserve-3d;
+}
+
+.next-form-flip{
+  transform: rotateX(360deg);
+} */

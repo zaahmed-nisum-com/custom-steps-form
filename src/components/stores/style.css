@@ -1,0 +1,17 @@
+.stories-lib-main {
+  background: red;
+  z-index: 1000;
+  border-radius: 100%;
+  position: absolute;
+  width: 190px;
+  height: 190px;
+}
+
+.stories-lib-main h2 {
+  margin: 0;
+}
+ .stories-bg {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}

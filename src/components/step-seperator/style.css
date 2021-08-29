@@ -1,0 +1,53 @@
+.step-counter {
+  height: 30px;
+  border: solid;
+  width: 30px;
+  border-radius: 100%;
+  border: solid;
+  border-radius: 100%;
+}
+.stepper {
+  height: 5px;
+  border: solid;
+  width: 100%;
+  background-color: #0bb81e;
+}
+
+.stepper-warning{
+  background-color: #B00707;
+
+}
+.stepper-complete{
+  background-color: #0bb81e;
+}
+
+.complete-success {
+  border: solid 0.5px green;
+  animation: color-success-line 3s;
+}
+
+@keyframes color-success-line {
+  0% {
+    background: #7efd8c;
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    background: #0bb81e;
+  }
+}
+.complete-warning {
+  border: solid 0.5px red;
+  animation: color-warning-line 3s;
+}
+
+@keyframes color-warning-line {
+  0% {
+    background: #FF5D5D;
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    background: #B00707;
+  }
+}
