@@ -1,15 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Stories from "./components/stores";
-import Purchase from "./pages/purchase";
+import { QueryClient, QueryClientProvider } from "react-query";
+import Blogs from "./react-query/blog";
+import { ReactQueryDevtools } from "react-query/devtools";
+
+const queryClient = new QueryClient({
+  defaultOptions: {},
+});
 
 function App() {
-
-
   return (
-    <div className="App">
-      <Purchase  />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools initialIsOpen={false} />
+      <Blogs />
+    </QueryClientProvider>
   );
 }
 
